@@ -14,6 +14,7 @@
 		02BDDAE71BCE69C600446C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BDDAE51BCE69C600446C56 /* LaunchScreen.storyboard */; };
 		02BDDAF21BCE69C600446C56 /* MangaBrowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDAF11BCE69C600446C56 /* MangaBrowerTests.swift */; };
 		02BDDAFD1BCE69C600446C56 /* MangaBrowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDAFC1BCE69C600446C56 /* MangaBrowerUITests.swift */; };
+		02BDDB0C1BCE6F6700446C56 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		02BDDAF81BCE69C600446C56 /* MangaBrowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaBrowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BDDAFC1BCE69C600446C56 /* MangaBrowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaBrowerUITests.swift; sourceTree = "<group>"; };
 		02BDDAFE1BCE69C600446C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		02BDDADB1BCE69C600446C56 /* MangaBrower */ = {
 			isa = PBXGroup;
 			children = (
+				02BDDB0A1BCE69DA00446C56 /* ViewController */,
 				02BDDADC1BCE69C600446C56 /* AppDelegate.swift */,
-				02BDDADE1BCE69C600446C56 /* ViewController.swift */,
 				02BDDAE01BCE69C600446C56 /* Main.storyboard */,
 				02BDDAE31BCE69C600446C56 /* Assets.xcassets */,
 				02BDDAE51BCE69C600446C56 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				02BDDAFE1BCE69C600446C56 /* Info.plist */,
 			);
 			path = MangaBrowerUITests;
+			sourceTree = "<group>";
+		};
+		02BDDB0A1BCE69DA00446C56 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02BDDADE1BCE69C600446C56 /* ViewController.swift */,
+				02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BDDB0C1BCE6F6700446C56 /* PageContentViewController.swift in Sources */,
 				02BDDADF1BCE69C600446C56 /* ViewController.swift in Sources */,
 				02BDDADD1BCE69C600446C56 /* AppDelegate.swift in Sources */,
 			);
@@ -397,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MangaBrower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanhl.MangaBrower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MangaBrower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanhl.MangaBrower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +495,7 @@
 				02BDDB031BCE69C600446C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02BDDB041BCE69C600446C56 /* Build configuration list for PBXNativeTarget "MangaBrowerTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +504,7 @@
 				02BDDB061BCE69C600446C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02BDDB071BCE69C600446C56 /* Build configuration list for PBXNativeTarget "MangaBrowerUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +513,7 @@
 				02BDDB091BCE69C600446C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

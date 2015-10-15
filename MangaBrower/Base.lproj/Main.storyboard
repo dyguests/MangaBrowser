@@ -1,25 +1,141 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gRZ-XM-MOc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="qjz-i4-AOR">
+            <objects>
+                <navigationController id="gRZ-XM-MOc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Mf-be-ZEu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OyY-Hi-Ao8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDr-pS-6Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="330"/>
+        </scene>
+        <!--麟的漫画-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MangaBrower" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zj9-nj-BDY" userLabel="Content">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-SK-Am1" userLabel="BottomContainer">
+                                <rect key="frame" x="16" y="518" width="288" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o69-Al-nb5">
+                                        <rect key="frame" x="-2" y="0.0" width="237" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62/63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-sG-exS">
+                                        <rect key="frame" x="241" y="0.0" width="47" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="o69-Al-nb5" secondAttribute="bottom" id="4Cb-Ct-hJA"/>
+                                    <constraint firstItem="o69-Al-nb5" firstAttribute="leading" secondItem="WfU-SK-Am1" secondAttribute="leading" id="4iP-e9-J95"/>
+                                    <constraint firstItem="gtj-sG-exS" firstAttribute="top" secondItem="WfU-SK-Am1" secondAttribute="top" id="5hl-BA-b9P"/>
+                                    <constraint firstItem="gtj-sG-exS" firstAttribute="leading" secondItem="o69-Al-nb5" secondAttribute="trailing" constant="8" id="6DM-gp-i1f"/>
+                                    <constraint firstItem="o69-Al-nb5" firstAttribute="top" secondItem="WfU-SK-Am1" secondAttribute="top" id="Pnz-DX-mXl"/>
+                                    <constraint firstAttribute="trailing" secondItem="gtj-sG-exS" secondAttribute="trailing" id="TYS-PQ-cd2"/>
+                                    <constraint firstAttribute="bottom" secondItem="gtj-sG-exS" secondAttribute="bottom" id="deS-Lv-Otw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zj9-nj-BDY" secondAttribute="trailing" id="2Hm-m6-Kng"/>
+                            <constraint firstItem="zj9-nj-BDY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AOd-3V-BjF"/>
+                            <constraint firstItem="zj9-nj-BDY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LfB-Ds-WDs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WfU-SK-Am1" secondAttribute="leading" id="Qeg-DL-MQ7"/>
+                            <constraint firstItem="zj9-nj-BDY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gmX-zP-Iq6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WfU-SK-Am1" secondAttribute="trailing" id="loo-Zh-Nnm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WfU-SK-Am1" secondAttribute="bottom" constant="20" id="smD-Pd-v2A"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="J0z-d4-qP2" appends="YES" id="OyQ-BF-1Gz"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="麟的漫画" id="0xB-yN-XIc"/>
+                    <connections>
+                        <outlet property="bottomContainer" destination="WfU-SK-Am1" id="slX-C5-fLY"/>
+                        <outlet property="bottomContainerBottomLayoutGuide" destination="smD-Pd-v2A" id="D3e-0N-1g4"/>
+                        <outlet property="contentView" destination="zj9-nj-BDY" id="uxy-yM-n0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="J0z-d4-qP2">
+                    <connections>
+                        <action selector="onViewTapped:" destination="BYZ-38-t0r" id="d8c-2M-CgQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="202" y="330"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="u1T-on-4Ca">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="rE6-uS-GCG" customClass="PageContentViewController" customModule="MangaBrower" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1s5-F8-ZBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Een-Kv-oPv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U8T-ao-9DK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9nH-Qj-mTm" appends="YES" id="un1-2b-JUZ"/>
+                            <outletCollection property="gestureRecognizers" destination="FQE-RT-vXH" appends="YES" id="Clb-y1-IcU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="panGesture" destination="FQE-RT-vXH" id="5dl-8V-Mfv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rww-6q-0Bm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="9nH-Qj-mTm">
+                    <connections>
+                        <action selector="onPinch:" destination="rE6-uS-GCG" id="QIK-Jj-bdP"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FQE-RT-vXH">
+                    <connections>
+                        <action selector="onPan:" destination="rE6-uS-GCG" id="5ab-Ne-Ngx"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="625" y="667"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="gId-jP-Rmr">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="oHp-eq-Cq8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPF-To-shm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="5"/>
         </scene>
     </scenes>
 </document>
