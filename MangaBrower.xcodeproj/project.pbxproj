@@ -14,7 +14,8 @@
 		02BDDAE71BCE69C600446C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BDDAE51BCE69C600446C56 /* LaunchScreen.storyboard */; };
 		02BDDAF21BCE69C600446C56 /* MangaBrowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDAF11BCE69C600446C56 /* MangaBrowerTests.swift */; };
 		02BDDAFD1BCE69C600446C56 /* MangaBrowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDAFC1BCE69C600446C56 /* MangaBrowerUITests.swift */; };
-		02BDDB0C1BCE6F6700446C56 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		02BDDB0C1BCE6F6700446C56 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */; };
+		02DAA2EA1C04155C00E83814 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA2E91C04155C00E83814 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		02BDDAFC1BCE69C600446C56 /* MangaBrowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaBrowerUITests.swift; sourceTree = "<group>"; };
 		02BDDAFE1BCE69C600446C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02BDDB0B1BCE6F6700446C56 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		02DAA2E91C04155C00E83814 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		02BDDAD01BCE69C600446C56 = {
 			isa = PBXGroup;
 			children = (
+				02DAA2E91C04155C00E83814 /* README.md */,
 				02BDDADB1BCE69C600446C56 /* MangaBrower */,
 				02BDDAF01BCE69C600446C56 /* MangaBrowerTests */,
 				02BDDAFB1BCE69C600446C56 /* MangaBrowerUITests */,
@@ -268,6 +271,7 @@
 			files = (
 				02BDDB0C1BCE6F6700446C56 /* PageContentViewController.swift in Sources */,
 				02BDDADF1BCE69C600446C56 /* ViewController.swift in Sources */,
+				02DAA2EA1C04155C00E83814 /* README.md in Sources */,
 				02BDDADD1BCE69C600446C56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

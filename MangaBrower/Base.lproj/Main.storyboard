@@ -41,15 +41,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-SK-Am1" userLabel="BottomContainer">
                                 <rect key="frame" x="16" y="518" width="288" height="30"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o69-Al-nb5">
-                                        <rect key="frame" x="-2" y="0.0" width="237" height="31"/>
-                                    </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62/63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-sG-exS">
                                         <rect key="frame" x="241" y="0.0" width="47" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o69-Al-nb5">
+                                        <rect key="frame" x="-2" y="0.0" width="237" height="31"/>
+                                    </slider>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="o69-Al-nb5" secondAttribute="bottom" id="4Cb-Ct-hJA"/>

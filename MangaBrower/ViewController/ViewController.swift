@@ -17,7 +17,6 @@ class ViewController: UIViewController , UIPageViewControllerDataSource, UIPageV
     
     //演示用图片
     var images = ["5.jpg","1.png","2.png","3.png","4.png"]
-    var count = 0
     
     var pageViewController : UIPageViewController!
     
@@ -118,25 +117,26 @@ class ViewController: UIViewController , UIPageViewControllerDataSource, UIPageV
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         return images.count
     }
-    
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
-    }
+
+    //加了这个方法适配时iPhone4,5显示界面不全
+//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+//        return 0
+//    }
     
     //#Custom
     
-    func changePage(direction:UIPageViewControllerNavigationDirection) {
-        var pageIndex = (pageViewController.viewControllers![0] as! PageContentViewController).pageIndex!
-        
-        if (direction == UIPageViewControllerNavigationDirection.Forward) {
-            pageIndex++
-        } else {
-            pageIndex--
-        }
-        
-        if let viewController = viewControllerAtIndex(pageIndex) {
-            self.pageViewController.setViewControllers([viewController], direction: direction, animated: true, completion: nil)
-        }
-    }
+//    func changePage(direction:UIPageViewControllerNavigationDirection) {
+//        var pageIndex = (pageViewController.viewControllers![0] as! PageContentViewController).pageIndex!
+//        
+//        if (direction == UIPageViewControllerNavigationDirection.Forward) {
+//            pageIndex++
+//        } else {
+//            pageIndex--
+//        }
+//        
+//        if let viewController = viewControllerAtIndex(pageIndex) {
+//            self.pageViewController.setViewControllers([viewController], direction: direction, animated: true, completion: nil)
+//        }
+//    }
 }
 
